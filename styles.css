@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1a1a1a;
+    font-family: Arial, sans-serif;
+}
+
+.game-container {
+    text-align: center;
+    color: white;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.circle:hover {
+    transform: scale(1.05);
+}
+
+#color-text {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.buttons {
+    margin-top: 50px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#yes-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+#no-btn {
+    background-color: #dc3545;
+    color: white;
+    margin-left: 20px;
+}
+
+.game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.game-over h2 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.game-over p {
+    font-size: 24px;
+}
+
+.hidden {
+    display: none;
+}
