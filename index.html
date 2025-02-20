@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChronoColors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="stats">
+            <span id="score">Score: 0</span>
+            <span id="timer">Time: 30</span>
+        </div>
+        <div id="circle" class="circle">
+            <span id="color-text"></span>
+        </div>
+        <div class="buttons">
+            <button id="yes-btn">Yes</button>
+            <button id="no-btn">No</button>
+        </div>
+        <div id="game-over" class="game-over hidden">
+            <h2>Game Over!</h2>
+            <p id="final-score"></p>
+            <button id="restart-btn">Restart</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
